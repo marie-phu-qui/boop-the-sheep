@@ -33,7 +33,7 @@ Developper goal : Using TTD approach. <3 Enzyme and Jest <3
 
 
 ##  Stretch
-- Game rules : Every sheep has defining props : { wool_color: (string); outfit_color: (string); eye_smile; smile : (boolean); (optional : legs: (int))}; only the groupe of sheep with the same one property value are electrical at the same time. \
+- Game rules : Every sheep has defining props : { wool_color: (string); outfit_color: (string); eye_color: (string); smile : (boolean); (optional : legs: (int))}; only the groupe of sheep with the same one property value are electrical at the same time. \
 -> Strech. The electric state can changes if a storm comes.
 
 - As a user:
