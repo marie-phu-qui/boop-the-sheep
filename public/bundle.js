@@ -257,6 +257,7 @@ var LandingSheep = function (_React$Component) {
 
     _this.state = {};
     _this.handleMouseOver = _this.handleMouseOver.bind(_this);
+    _this.handleClick = _this.handleClick.bind(_this);
     return _this;
   }
 
@@ -266,11 +267,25 @@ var LandingSheep = function (_React$Component) {
       console.log('electric sheep yourself !');
     }
   }, {
+    key: 'handleClick',
+    value: function handleClick() {
+      // console.log('zzzz neighbouhood !');
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'p',
+          null,
+          'neighbouhood neighbouhood neighbouhoodneighbouhood neighbouhood'
+        )
+      );
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { style: { alignItems: 'center' } },
+        { style: { alignItems: 'center' }, onClick: this.handleClick },
         _react2.default.createElement('img', { src: 'https://ubisafe.org/images/sheep-vector-1.png', style: { display: 'block', margin: 'auto' }, onMouseOver: this.handleMouseOver }),
         _react2.default.createElement('img', { src: 'https://vectr.com/tmp/b1eGRGJSwg/aOhKrhb2.svg?width=640&height=640&select=aOhKrhb2page0', style: { display: 'block', margin: 'auto' }, onMouseOver: function onMouseOver() {
             return console.log('biiiiz');
