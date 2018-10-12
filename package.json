@@ -1,0 +1,8 @@
+{
+  "name": "boop-the-sheep",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/marie-phu-qui/boop-the-sheep.git",
+  "author": "marie-phu-qui <marie.nguyen.phu.qui@gmail.com>",
+  "license": "MIT"
+}
