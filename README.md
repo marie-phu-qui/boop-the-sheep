@@ -41,8 +41,9 @@ Developper goal : Using TTD approach. <3 Enzyme and Jest <3
   - I see sheeps wearing leather jackets
   - The sheeps are moving more slowly on grassy patch because they eat
   - A booped electric sheep will caring a lightning effet wool coat / leather jacket for 3 seconds after boop
-  - I can acces to my best scores. 
+  - I can acces to my best scores
   - I can access the secret Volcano Pit level
+  - The booped sheeps appear on the side of my screen with a low opacity -> the electric sheep avec a defining lightning bolt on their forehead
   
 
 - As a developper : 
