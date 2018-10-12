@@ -272,7 +272,9 @@ var LandingSheep = function (_React$Component) {
         'div',
         { style: { alignItems: 'center' } },
         _react2.default.createElement('img', { src: 'https://ubisafe.org/images/sheep-vector-1.png', style: { display: 'block', margin: 'auto' }, onMouseOver: this.handleMouseOver }),
-        _react2.default.createElement('img', { src: 'https://vectr.com/tmp/b1eGRGJSwg/aOhKrhb2.svg?width=640&height=640&select=aOhKrhb2page0', style: { display: 'block', margin: 'auto' } })
+        _react2.default.createElement('img', { src: 'https://vectr.com/tmp/b1eGRGJSwg/aOhKrhb2.svg?width=640&height=640&select=aOhKrhb2page0', style: { display: 'block', margin: 'auto' }, onMouseOver: function onMouseOver() {
+            return console.log('biiiiz');
+          } })
       );
     }
   }]);
