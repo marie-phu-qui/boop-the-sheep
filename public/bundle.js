@@ -118,11 +118,15 @@ var App = function App() {
   return _react2.default.createElement(
     _react2.default.Fragment,
     null,
-    _react2.default.createElement(_Header2.default, null),
     _react2.default.createElement(
       "div",
-      { style: { alignItems: 'center' } },
-      _react2.default.createElement("img", { src: "https://ubisafe.org/images/sheep-vector-1.png", style: { display: 'block', margin: 'auto' } })
+      { className: "app-content", style: { flex: '1 0 auto', minHeight: '100%' } },
+      _react2.default.createElement(_Header2.default, null),
+      _react2.default.createElement(
+        "div",
+        { style: { alignItems: 'center' } },
+        _react2.default.createElement("img", { src: "https://ubisafe.org/images/sheep-vector-1.png", style: { display: 'block', margin: 'auto' } })
+      )
     ),
     _react2.default.createElement(_Footer2.default, null)
   );
@@ -155,20 +159,20 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Footer = function Footer() {
   return _react2.default.createElement(
     'div',
-    { id: 'main footer', className: 'title', style: { textAlign: 'center', marginTop: '5vw' } },
+    { id: 'main-footer', className: 'title', style: { textAlign: 'center', marginTop: '5vw' } },
     _react2.default.createElement(
       'h4',
-      { id: 'footer-title', style: { backgroundColor: 'pink', color: 'white' } },
+      { id: 'footer-title', style: { backgroundColor: 'pink', color: 'white', height: '3vw' } },
       'This app is brougth to you by ',
       _react2.default.createElement(
         'a',
-        { href: 'https://github.com/marie-phu-qui' },
+        { href: 'https://github.com/marie-phu-qui', style: { color: '#F5F5F5' } },
         'Marie Nguyen Phu Qui'
       ),
       '. For more information about the game developpement perspectives of this app, please consult the ',
       _react2.default.createElement(
         'a',
-        { href: 'https://github.com/marie-phu-qui/boop-the-sheep/blob/master/README.md' },
+        { href: 'https://github.com/marie-phu-qui/boop-the-sheep/blob/master/README.md', style: { color: '#F5F5F5' } },
         'ReadMe'
       )
     )
