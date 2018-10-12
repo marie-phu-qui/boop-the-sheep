@@ -11,6 +11,6 @@ Boop the sheep features two worlds. The ice world of hawaiian shirts sheeps, and
 Boop all the sheeps.
 
 # Tools
-Using canvas for the web app.
+Using canvas for the web app. \
 Using React Native for the mobile version
 
