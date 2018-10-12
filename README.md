@@ -47,7 +47,7 @@ Developper goal : Using TTD approach. <3 Enzyme and Jest <3
 
 - As a developper : 
   - I am learning and using React Native, I feel great ! 
-  - The Volcano Pit : Push only the electrical sheep down the lava bath - Admire the stormy effects. Nice.
+  - The Volcano Pit : Push only the electrical sheep down the lava bath - Admire the stormy effects. Nice. You loose if you push 3 harmless sheeps down the pit in a row. Sheep roast. Random times.
   - I set up different difficulty level - the sheeps tend to move more, there are more electric sheeps
   - Master trick : If two booped electric sheeps are close enough (nothing in betwen them) they overcharge and turn back into regular sheeps (cf : conways game of life)
   
