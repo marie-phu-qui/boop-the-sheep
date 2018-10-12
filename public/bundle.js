@@ -112,6 +112,10 @@ var _Footer = __webpack_require__(/*! ./Footer */ "./client/components/Footer.js
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
+var _LandingSheep = __webpack_require__(/*! ./LandingSheep */ "./client/components/LandingSheep.jsx");
+
+var _LandingSheep2 = _interopRequireDefault(_LandingSheep);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function App() {
@@ -120,13 +124,9 @@ var App = function App() {
     null,
     _react2.default.createElement(
       "div",
-      { className: "app-content", style: { flex: '1 0 auto', minHeight: '100%' } },
+      { id: "app-content", style: { flex: '1 0 auto', minHeight: '100%' } },
       _react2.default.createElement(_Header2.default, null),
-      _react2.default.createElement(
-        "div",
-        { style: { alignItems: 'center' } },
-        _react2.default.createElement("img", { src: "https://ubisafe.org/images/sheep-vector-1.png", style: { display: 'block', margin: 'auto' } })
-      )
+      _react2.default.createElement(_LandingSheep2.default, null)
     ),
     _react2.default.createElement(_Footer2.default, null)
   );
@@ -216,6 +216,71 @@ var Header = function Header() {
 };
 
 exports.default = Header;
+
+/***/ }),
+
+/***/ "./client/components/LandingSheep.jsx":
+/*!********************************************!*\
+  !*** ./client/components/LandingSheep.jsx ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var LandingSheep = function (_React$Component) {
+  _inherits(LandingSheep, _React$Component);
+
+  function LandingSheep(props) {
+    _classCallCheck(this, LandingSheep);
+
+    var _this = _possibleConstructorReturn(this, (LandingSheep.__proto__ || Object.getPrototypeOf(LandingSheep)).call(this, props));
+
+    _this.state = {};
+    _this.handleMouseOver = _this.handleMouseOver.bind(_this);
+    return _this;
+  }
+
+  _createClass(LandingSheep, [{
+    key: 'handleMouseOver',
+    value: function handleMouseOver() {
+      console.log('electric sheep yourself !');
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { style: { alignItems: 'center' } },
+        _react2.default.createElement('img', { src: 'https://ubisafe.org/images/sheep-vector-1.png', style: { display: 'block', margin: 'auto' }, onMouseOver: this.handleMouseOver }),
+        _react2.default.createElement('img', { src: 'https://vectr.com/tmp/b1eGRGJSwg/aOhKrhb2.svg?width=640&height=640&select=aOhKrhb2page0', style: { display: 'block', margin: 'auto' } })
+      );
+    }
+  }]);
+
+  return LandingSheep;
+}(_react2.default.Component);
+
+exports.default = LandingSheep;
 
 /***/ }),
 
