@@ -8,7 +8,8 @@ Ice country, a flock of sheeps are wearing hawaiian shirts. It is intriging. You
 Boop the sheep features two worlds. The ice world of hawaiian shirts sheeps, and the tropical world of leather jacket sheeps. They are both similar with random electric sheep that will buzz you. After 5 buzz you will automatically change world. The non electrical sheeps will just jump out of the screen when clicked.
 
 # Goal
-Boop all the harmless sheeps.
+Boop all the harmless sheeps. \
+Developper goal : Using TTD approach. <3 Enzyme and Jest <3 
 
 # User Stories
 ##  MVP
