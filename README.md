@@ -54,7 +54,7 @@ Developper goal : Using TTD approach. <3 Enzyme and Jest <3
   
  ### Extension : Electric sheep
  Same game. But you are the sheep. \
- Do not get booped by the geant finger, run surrounded by as many sheeps as you can to create friction and become and electric sheep.
+ Do not get booped by the geant finger, run surrounded by as many sheeps as you can to create friction and become an electric sheep.
  
 
 # Tools
