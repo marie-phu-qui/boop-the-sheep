@@ -8,7 +8,7 @@ Ice country, a flock of sheeps are wearing hawaiian shirts. It is intriging. You
 Boop the sheep features two worlds. The ice world of hawaiian shirts sheeps, and the tropical world of leather jacket sheeps. They are both similar with random electric sheep that will buzz you. After 5 buzz you will automatically change world. The non electrical sheeps will just jump out of the screen when clicked.
 
 # Goal
-Boop all the sheeps.
+Boop all the harmless sheeps.
 
 # User Stories
 ##  MVP
@@ -43,6 +43,7 @@ Boop all the sheeps.
   - I am learning and using React Native, I feel great ! 
   - The Volcano Pit : Push only the electrical sheep down the lava bath - Admire the stormy effects. Nice.
   - I set up different difficulty level - the sheeps tend to move more, there are more electric sheeps
+  - Master trick : If two booped electric sheeps are close enough (nothing in betwen them) they overcharge and turn back into regular sheeps (cf : conways game of life)
   
  ### Extension : Electric sheep
  Same game. But you are the sheep. \
