@@ -13,6 +13,8 @@ Developper goal : Using TTD approach. <3 Enzyme and Jest <3
 
 # User Stories
 ##  MVP
+- Game rules : Random sheep is electric. Sheep roulette times.
+
 - As a user:
   - I see an ice world 
   - I see sheeps wearing hawaiian shirts
@@ -31,6 +33,9 @@ Developper goal : Using TTD approach. <3 Enzyme and Jest <3
 
 
 ##  Stretch
+- Game rules : Every sheep has defining props : { wool_color: (string); outfit_color: (string); eye_smile; smile : (boolean); (optional : legs: (int))}; only the groupe of sheep with the same one property value are electrical at the same time. \
+-> Strech. The electric state can changes if a storm comes.
+
 - As a user:
   - I see an tropical island world 
   - I see sheeps wearing leather jackets
