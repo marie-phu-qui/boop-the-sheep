@@ -1,0 +1,72 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
+
+PATH: 
+  C:\Program Files\Git\home\Marie\.local\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\home\Marie\.local\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\dotnet;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin;C:\Program Files\nodejs;C:\Users\Marie\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\Marie\AppData\Local\Programs\Python\Python37;C:\Users\Marie\AppData\Local\Microsoft\WindowsApps;C:\Users\Marie\.babun;C:\Program Files\Microsoft VS Code\bin;C:\Users\Marie\AppData\Local\Yarn\bin;C:\Users\Marie\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.10.1
+
+Node version: 
+  10.11.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOTDIR: not a directory, scandir 'C:\Users\Marie\workspace\boop-the-sheep\node_modules'
+
+npm manifest: 
+  {
+    "name": "boop-the-sheep",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/marie-phu-qui/boop-the-sheep.git",
+    "author": "marie-phu-qui <marie.nguyen.phu.qui@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+      "start": "node server",
+      "postinstall": "webpack",
+      "build": "webpack --watch",
+      "dev": "nodemon server",
+      "test": "jest --watchAll"
+    },
+    "jest": {
+      "setupFiles": [
+        "./tests/setup-env.js"
+      ]
+    },
+    "babel": {
+      "presets": [
+        "babel-preset-env",
+        "babel-preset-react"
+      ]
+    },
+    "dependencies": {
+      "babel-core": "^6.26.3",
+      "babel-loader": "^7.0",
+      "babel-preset-env": "^1.7.0",
+      "babel-preset-react": "^6.24.1",
+      "babel-register": "^6.26.0",
+      "express": "^4.16.3",
+      "knex": "^0.15.2",
+      "react": "^16.5.1",
+      "react-dom": "^16.5.1",
+      "sqlite3": "^4.0.2",
+      "webpack": "^4.19.0",
+      "webpack-cli": "^3.1.0"
+    },
+    "devDependencies": {
+      "jest": "^23.6.0",
+      "enzyme": "^3.6.0",
+      "enzyme-adapter-react-16": "^1.5.0",
+      "supertest": "^3.3.0",
+      "nodemon": "^1.18.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
