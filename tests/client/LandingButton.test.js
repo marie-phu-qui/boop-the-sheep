@@ -9,7 +9,7 @@ describe('<LandingButton />', () => {
     test('renders LandingButton component without crashing', () => {
         const wrapper = shallow(<LandingButton/>)
     });
-    test('<LandingButton /> is a clickable component', () => {
+    test('is a clickable component', () => {
         const expected = 'href=' || 'button';
         const wrapper = shallow(<LandingButton />);
         expect(wrapper.html()).toMatch(expected);

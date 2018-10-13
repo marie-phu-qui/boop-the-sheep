@@ -9,7 +9,7 @@ describe('<Footer />', () => {
     test('renders Footer component without crashing', () => {
         const wrapper = shallow(<Footer/>)
     });
-    test('<Footer /> contains a link to my github', () => {
+    test('contains a link to my github', () => {
         const expected = 'https://github.com/marie-phu-qui';
         const wrapper = shallow(<Footer />);
         expect(wrapper.html()).toMatch(expected);
