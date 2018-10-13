@@ -2,15 +2,18 @@ import React from 'react'
 
 import Header from "./Header";
 import Footer from "./Footer";
+import LandingSheep from "./LandingSheep";
+import LandingButton from './LandingButton';
+
 
 const App = () => {
     return (
       <React.Fragment>
-        <div className='app-content' style={{flex: '1 0 auto',minHeight: '100%'}}>
+        <div id='app-content' style={{flex: '1 0 auto',minHeight: '100%'}}>
             <Header />
-            <div style={{alignItems: 'center'}}>
-                <img src='https://ubisafe.org/images/sheep-vector-1.png' style={{display:'block', margin: 'auto'}}/>
-            </div>
+            <LandingButton />
+            <LandingSheep />
+            
         </div>
         <Footer />
       </React.Fragment>
