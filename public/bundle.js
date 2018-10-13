@@ -388,7 +388,7 @@ var LandingSheep = function (_React$Component) {
         { style: { alignItems: 'center' } },
         _react2.default.createElement(
           'div',
-          { onMouseEnter: this.handleHover, onMouseLeave: this.handleHoverOff, onClick: this.handleClick },
+          { id: 'landing-sheep', onMouseEnter: this.handleHover, onMouseLeave: this.handleHoverOff, onClick: this.handleClick },
           this.state.click == true && _react2.default.createElement(_Game2.default, null),
           ' ',
           this.state.hover == true ? this.renderElectricSheep() : this.renderSheep()

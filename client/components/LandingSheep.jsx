@@ -56,7 +56,7 @@ class LandingSheep extends React.Component {
   render() {
     return (
     <div style={{alignItems: 'center'}}>
-    <div onMouseEnter={this.handleHover} onMouseLeave={this.handleHoverOff} onClick={this.handleClick}>{this.state.click == true && <Game /> } {this.state.hover == true ? this.renderElectricSheep() : this.renderSheep() }</div>
+    <div id='landing-sheep' onMouseEnter={this.handleHover} onMouseLeave={this.handleHoverOff} onClick={this.handleClick}>{this.state.click == true && <Game /> } {this.state.hover == true ? this.renderElectricSheep() : this.renderSheep() }</div>
     </div>
     )
     }
