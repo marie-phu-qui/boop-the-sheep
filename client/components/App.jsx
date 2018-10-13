@@ -3,6 +3,7 @@ import React from 'react'
 import Header from "./Header";
 import Footer from "./Footer";
 import LandingSheep from "./LandingSheep";
+import LandingButton from './LandingButton';
 
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
       <React.Fragment>
         <div id='app-content' style={{flex: '1 0 auto',minHeight: '100%'}}>
             <Header />
+            <LandingButton />
             <LandingSheep />
             
         </div>
