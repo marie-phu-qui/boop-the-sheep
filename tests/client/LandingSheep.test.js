@@ -25,9 +25,10 @@ describe('<LandingSheep />', () => {
         wrapper.find('#landing-sheep').simulate('mouseenter');
         expect(wrapper.state('hover')).toBe(expected);
     });
-    // test('<LandingSheep /> if hover state is true the electric-sheep img is displayed', () => {
-    //     const expected = '<div id="electric-sheep">';
-    //     const wrapper = shallow(<LandingSheep />);
-    //     expect(wrapper.html()).toMatch(expected);
-    // });
+    test('<LandingSheep /> if hover state is true the electric-sheep img is displayed', () => {
+        const expected = '<div id="electric-sheep">';
+        const wrapper = shallow(<LandingSheep />);
+        wrapper.find('#landing-sheep').simulate('mouseenter');
+        expect(wrapper.html()).toMatch(expected);
+    });
 })
