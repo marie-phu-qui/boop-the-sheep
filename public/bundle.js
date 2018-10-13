@@ -239,7 +239,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Header = function Header() {
   return _react2.default.createElement(
     'div',
-    { id: 'main header', className: 'title', style: { textAlign: 'center', marginBottom: '5vw' } },
+    { id: 'main header', className: 'title', style: { textAlign: 'center', margin: ' 5vw 0  5vw 0' } },
     _react2.default.createElement(
       'h1',
       { id: 'header-title', style: { color: 'pink' } },
