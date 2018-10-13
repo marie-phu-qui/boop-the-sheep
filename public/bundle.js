@@ -116,6 +116,10 @@ var _LandingSheep = __webpack_require__(/*! ./LandingSheep */ "./client/componen
 
 var _LandingSheep2 = _interopRequireDefault(_LandingSheep);
 
+var _LandingButton = __webpack_require__(/*! ./LandingButton */ "./client/components/LandingButton.jsx");
+
+var _LandingButton2 = _interopRequireDefault(_LandingButton);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function App() {
@@ -126,6 +130,7 @@ var App = function App() {
       "div",
       { id: "app-content", style: { flex: '1 0 auto', minHeight: '100%' } },
       _react2.default.createElement(_Header2.default, null),
+      _react2.default.createElement(_LandingButton2.default, null),
       _react2.default.createElement(_LandingSheep2.default, null)
     ),
     _react2.default.createElement(_Footer2.default, null)
@@ -247,6 +252,42 @@ exports.default = Header;
 
 /***/ }),
 
+/***/ "./client/components/LandingButton.jsx":
+/*!*********************************************!*\
+  !*** ./client/components/LandingButton.jsx ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var LandingButton = function LandingButton() {
+  return _react2.default.createElement(
+    'div',
+    { id: 'landing-btn' },
+    _react2.default.createElement(
+      'a',
+      { href: '/', className: 'button' },
+      'Meep meep'
+    )
+  );
+};
+
+exports.default = LandingButton;
+
+/***/ }),
+
 /***/ "./client/components/LandingSheep.jsx":
 /*!********************************************!*\
   !*** ./client/components/LandingSheep.jsx ***!
@@ -305,14 +346,14 @@ var LandingSheep = function (_React$Component) {
     }
   }, {
     key: 'handleHover',
-    value: function handleHover(e) {
+    value: function handleHover() {
       return this.setState({
         hover: true
       });
     }
   }, {
     key: 'handleHoverOff',
-    value: function handleHoverOff(e) {
+    value: function handleHoverOff() {
       return this.setState({
         hover: false
       });
@@ -349,7 +390,7 @@ var LandingSheep = function (_React$Component) {
           'div',
           { onMouseEnter: this.handleHover, onMouseLeave: this.handleHoverOff, onClick: this.handleClick },
           this.state.click == true && _react2.default.createElement(_Game2.default, null),
-          ' || ',
+          ' ',
           this.state.hover == true ? this.renderElectricSheep() : this.renderSheep()
         )
       );
