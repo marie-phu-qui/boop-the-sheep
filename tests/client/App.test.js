@@ -15,18 +15,18 @@ describe('<App />', () => {
     test('renders App component without crashing', () => {
         const wrapper = shallow(<App/>)
     });
-    test('<App /> contains all : <Header /><LandingButton /><LandingSheep /><Footer />" components', () => {
+    test('contains all : <Header /><LandingButton /><LandingSheep /><Footer />" components', () => {
         const expected = '<Header /><LandingButton /><LandingSheep /><Footer />';
         const wrapper = shallow(<App />);
         expect(wrapper.text()).toMatch(expected);
     });
-    test('<App /> when click LandingSheep components renders Game component', () => {
+    test('when click LandingSheep components renders Game component', () => {
         const wrapper = mount(<App />);
         wrapper.find('#landing-sheep').simulate('click');
         const actual = wrapper.containsMatchingElement(<Game />)
         expect(actual).toBeTruthy()
     });
-    test('<App /> when click LandingButton components go back to intial Landing', () => {
+    test('when click LandingButton components go back to intial Landing', () => {
         const expected = '<div id="electric-sheep">';
         const wrapper = mount(<App />);
         wrapper.find('#landing-btn').simulate('click');

@@ -9,7 +9,7 @@ describe('<Header />', () => {
     test('renders Header component without crashing', () => {
         const wrapper = shallow(<Header/>)
     });
-    test('<Header /> contains a writing of the title', () => {
+    test('contains a writing of the title', () => {
         const expected = 'Boop the sheep';
         const wrapper = shallow(<Header />);
         expect((wrapper.text()).toUpperCase()).toMatch(expected.toUpperCase());
