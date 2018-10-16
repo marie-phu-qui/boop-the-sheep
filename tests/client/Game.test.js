@@ -7,12 +7,16 @@ import Game from '../../client/components/Game';
 
 describe('<Game />', () => {
     test('renders Header component without crashing', () => {
-        const wrapper = shallow(<Game />)
+        console.log('pouet poeut pouet')
+        const wrapper = shallow(<Game/>)
+        console.log(wrapper.text() + 'hello helo hello')
+
     });
+// // Test to be done :
     test('I can see a flat background', () => {
-        const expected = 'pouet' 
-        const wrapper = shallow(<Game />);
-        console.log(wrapper.html())
+        const expected = '' 
+        const wrapper = shallow(<Game/>)
+        console.log(wrapper + 'hello helo hello')
         expect(wrapper.text()).toMatch(expected)
     });
     // test('The sheeps are rendered', () => {
@@ -21,6 +25,11 @@ describe('<Game />', () => {
     //     expect((wrapper.text()).toUpperCase()).toMatch(expected.toUpperCase());
     // });
     // test('The sheeps are moving', () => {
+    //     const expected = 'Boop the sheep';
+    //     const wrapper = shallow(<Game />);
+    //     expect((wrapper.text()).toUpperCase()).toMatch(expected.toUpperCase());
+    // });
+    // test('the state sheep is an object with specific electric state', () => {
     //     const expected = 'Boop the sheep';
     //     const wrapper = shallow(<Game />);
     //     expect((wrapper.text()).toUpperCase()).toMatch(expected.toUpperCase());
