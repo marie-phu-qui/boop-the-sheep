@@ -13,3 +13,18 @@ body {
 #main-footer{
     padding-top: 35vh;
 }
+.button {
+    display: block;
+    width: 7vw;
+    height: 3vh;
+    background: rgb(24, 153, 93);
+    padding: 1vw;
+    text-align: center;
+    border-radius: 1em;
+    color: white;
+    font-weight: bold;
+}
+
+#landing-btn .button{
+    margin: auto 2.5vw auto auto
+}
