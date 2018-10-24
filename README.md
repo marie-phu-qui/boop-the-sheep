@@ -13,6 +13,8 @@ Developper goal : Using TTD approach. <3 Enzyme and Jest <3
 
 # User Stories
 ##  MVP
+- Game rules : Random sheep is electric. Sheep roulette times.
+
 - As a user:
   - I see an ice world 
   - I see sheeps wearing hawaiian shirts
@@ -31,24 +33,28 @@ Developper goal : Using TTD approach. <3 Enzyme and Jest <3
 
 
 ##  Stretch
+- Game rules : Every sheep has defining props : { wool_color: (string); outfit_color: (string); eye_color: (string); smile : (boolean); (optional : legs: (int))}; only the groupe of sheep with the same one property value are electrical at the same time. \
+-> Strech. The electric state can changes if a storm comes.
+
 - As a user:
   - I see an tropical island world 
   - I see sheeps wearing leather jackets
   - The sheeps are moving more slowly on grassy patch because they eat
   - A booped electric sheep will caring a lightning effet wool coat / leather jacket for 3 seconds after boop
-  - I can acces to my best scores. 
+  - I can acces to my best scores
   - I can access the secret Volcano Pit level
+  - The booped sheeps appear on the side of my screen with a low opacity -> the electric sheep avec a defining lightning bolt on their forehead
   
 
 - As a developper : 
   - I am learning and using React Native, I feel great ! 
-  - The Volcano Pit : Push only the electrical sheep down the lava bath - Admire the stormy effects. Nice.
-  - I set up different difficulty level - the sheeps tend to move more, there are more electric sheeps
+  - The Volcano Pit : Push only the electrical sheep down the lava bath - Admire the stormy effects. Nice. You loose if you push 3 harmless sheeps down the pit in a row. Sheep roast. Random times.
+  - I set up different difficulty level - the sheeps tend to move more, there are more possibility of electric sheeps (2 props can fit)
   - Master trick : If two booped electric sheeps are close enough (nothing in betwen them) they overcharge and turn back into regular sheeps (cf : conways game of life)
   
  ### Extension : Electric sheep
  Same game. But you are the sheep. \
- Do not get booped by the geant finger, run surrounded by as many sheeps as you can to create friction and become and electric sheep.
+ Do not get booped by the geant finger, run surrounded by as many sheeps as you can to create friction and become an electric sheep.
  
 
 # Tools
