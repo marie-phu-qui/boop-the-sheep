@@ -9,12 +9,11 @@ import LandingButton from './LandingButton';
 const App = () => {
     return (
       <React.Fragment>
-        <div id='app-content' style={{flex: '1 0 auto',minHeight: '100%'}}>
+        <main role="main" className="container">
             <Header />
             <LandingButton />
             <LandingSheep />
-            
-        </div>
+        </main>
         <Footer />
       </React.Fragment>
     )
