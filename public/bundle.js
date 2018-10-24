@@ -127,8 +127,8 @@ var App = function App() {
     _react2.default.Fragment,
     null,
     _react2.default.createElement(
-      "div",
-      { id: "app-content", style: { flex: '1 0 auto', minHeight: '100%' } },
+      "main",
+      { role: "main", className: "container" },
       _react2.default.createElement(_Header2.default, null),
       _react2.default.createElement(_LandingButton2.default, null),
       _react2.default.createElement(_LandingSheep2.default, null)
@@ -163,26 +163,33 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Footer = function Footer() {
   return _react2.default.createElement(
-    'div',
-    { id: 'main-footer', className: 'title', style: { textAlign: 'center', marginTop: '5vw' } },
+    "footer",
+    { className: "footer" },
     _react2.default.createElement(
-      'h4',
-      { id: 'footer-title', style: { backgroundColor: 'pink', color: 'white', height: '3vw' } },
-      'This app is brougth to you by ',
+      "div",
+      { className: "container" },
       _react2.default.createElement(
-        'a',
-        { href: 'https://github.com/marie-phu-qui', style: { color: '#F5F5F5' } },
-        'Marie Nguyen Phu Qui'
-      ),
-      '. For more information about the game developpement perspectives of this app, please consult the ',
-      _react2.default.createElement(
-        'a',
-        { href: 'https://github.com/marie-phu-qui/boop-the-sheep/blob/master/README.md', style: { color: '#F5F5F5' } },
-        'ReadMe'
+        "span",
+        { className: "text-muted" },
+        "This app is brougth to you by",
+        _react2.default.createElement(
+          "a",
+          { href: "https://github.com/marie-phu-qui", className: "lightlink" },
+          " Marie Nguyen Phu Qui "
+        ),
+        ". For more information about the game developpement perspectives of this app, please consult the",
+        _react2.default.createElement(
+          "a",
+          { href: "https://github.com/marie-phu-qui/boop-the-sheep/blob/master/README.md", className: "lightlink" },
+          " ReadMe "
+        ),
+        "."
       )
     )
   );
 };
+// style={{textAlign:'center', marginTop:'5vw'}}
+// style={{backgroundColor: 'pink', color:'white', height:'3vw'}}
 
 exports.default = Footer;
 
