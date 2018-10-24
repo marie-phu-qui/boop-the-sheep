@@ -239,7 +239,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Header = function Header() {
   return _react2.default.createElement(
     'div',
-    { id: 'main header', className: 'title', style: { textAlign: 'center', marginBottom: '5vw' } },
+    { id: 'main header', className: 'title', style: { textAlign: 'center', margin: ' 5vw 0  5vw 0' } },
     _react2.default.createElement(
       'h1',
       { id: 'header-title', style: { color: 'pink' } },
@@ -388,7 +388,7 @@ var LandingSheep = function (_React$Component) {
         { style: { alignItems: 'center' } },
         _react2.default.createElement(
           'div',
-          { onMouseEnter: this.handleHover, onMouseLeave: this.handleHoverOff, onClick: this.handleClick },
+          { id: 'landing-sheep', onMouseEnter: this.handleHover, onMouseLeave: this.handleHoverOff, onClick: this.handleClick },
           this.state.click == true && _react2.default.createElement(_Game2.default, null),
           ' ',
           this.state.hover == true ? this.renderElectricSheep() : this.renderSheep()
