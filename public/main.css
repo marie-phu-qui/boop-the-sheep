@@ -1,15 +1,32 @@
-html, body {
-    height: 100%;
+html {
     margin: 0;
+    /* for sticky footer */
+    position: relative;
+    min-height: 100%;
     }
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* for sticky footer */
+    margin-bottom: 60px; /* Margin bottom by footer height */
     }
-#app-content {
+/* #app-content {
     flex-grow: 1;
-    }
-#main-footer{
-    padding-top: 35vh;
+    } */
+.footer{
+    /* for sticky footer */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 2hv;
+    max-height: 10vh; /* Set the fixed height of the footer here */
+    line-height: 5vh; /* Vertically center the text there */
+    background-color: pink;
+    font-size: 0.9em;
+    padding: 0.5em
+}
+a.lightlink{
+    color:#F5F5F5;
+    font-size: 1.2em
 }
