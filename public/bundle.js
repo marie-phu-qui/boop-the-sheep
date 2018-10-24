@@ -91,9 +91,323 @@
   !*** ./client/components/App.jsx ***!
   \***********************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:/Users/Marie/workspace/boop-the-sheep/client/components/App.jsx: Unexpected token (12:1)\n\n\u001b[0m \u001b[90m 10 | \u001b[39m    \u001b[36mreturn\u001b[39m (\n \u001b[90m 11 | \u001b[39m      \u001b[33m<\u001b[39m\u001b[33mReact\u001b[39m\u001b[33m.\u001b[39m\u001b[33mFragment\u001b[39m\u001b[33m>\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 | \u001b[39m\u001b[33m<<\u001b[39m\u001b[33m<<\u001b[39m\u001b[33m<<\u001b[39m\u001b[33m<\u001b[39m \u001b[33mHEAD\u001b[39m\n \u001b[90m    | \u001b[39m \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 | \u001b[39m        \u001b[33m<\u001b[39m\u001b[33mmain\u001b[39m role\u001b[33m=\u001b[39m\u001b[32m\"main\"\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"container\"\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 14 | \u001b[39m            \u001b[33m<\u001b[39m\u001b[33mHeader\u001b[39m \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 15 | \u001b[39m            \u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m style\u001b[33m=\u001b[39m{{alignItems\u001b[33m:\u001b[39m \u001b[32m'center'\u001b[39m}}\u001b[33m>\u001b[39m\u001b[0m\n");
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Header = __webpack_require__(/*! ./Header */ "./client/components/Header.jsx");
+
+var _Header2 = _interopRequireDefault(_Header);
+
+var _Footer = __webpack_require__(/*! ./Footer */ "./client/components/Footer.jsx");
+
+var _Footer2 = _interopRequireDefault(_Footer);
+
+var _LandingSheep = __webpack_require__(/*! ./LandingSheep */ "./client/components/LandingSheep.jsx");
+
+var _LandingSheep2 = _interopRequireDefault(_LandingSheep);
+
+var _LandingButton = __webpack_require__(/*! ./LandingButton */ "./client/components/LandingButton.jsx");
+
+var _LandingButton2 = _interopRequireDefault(_LandingButton);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var App = function App() {
+  return _react2.default.createElement(
+    _react2.default.Fragment,
+    null,
+    _react2.default.createElement(
+      "main",
+      { role: "main", className: "container" },
+      _react2.default.createElement(_Header2.default, null),
+      _react2.default.createElement(_LandingButton2.default, null),
+      _react2.default.createElement(_LandingSheep2.default, null)
+    ),
+    _react2.default.createElement(_Footer2.default, null)
+  );
+};
+
+exports.default = App;
+
+/***/ }),
+
+/***/ "./client/components/Footer.jsx":
+/*!**************************************!*\
+  !*** ./client/components/Footer.jsx ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Footer = function Footer() {
+  return _react2.default.createElement(
+    "footer",
+    { className: "footer" },
+    _react2.default.createElement(
+      "div",
+      { className: "container" },
+      _react2.default.createElement(
+        "span",
+        { className: "text-muted" },
+        "This app is brougth to you by",
+        _react2.default.createElement(
+          "a",
+          { href: "https://github.com/marie-phu-qui", className: "lightlink" },
+          " Marie Nguyen Phu Qui "
+        ),
+        ". For more information about the game developpement perspectives of this app, please consult the",
+        _react2.default.createElement(
+          "a",
+          { href: "https://github.com/marie-phu-qui/boop-the-sheep/blob/master/README.md", className: "lightlink" },
+          " ReadMe "
+        ),
+        "."
+      )
+    )
+  );
+};
+// style={{textAlign:'center', marginTop:'5vw'}}
+// style={{backgroundColor: 'pink', color:'white', height:'3vw'}}
+
+exports.default = Footer;
+
+/***/ }),
+
+/***/ "./client/components/Game.jsx":
+/*!************************************!*\
+  !*** ./client/components/Game.jsx ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Game = function Game() {
+  return _react2.default.createElement('div', { id: 'game', className: 'title', style: { display: 'block', margin: '5em auto 5em auto', backgroundColor: 'grey', height: '70vh', width: '80vw' } });
+};
+
+exports.default = Game;
+
+/***/ }),
+
+/***/ "./client/components/Header.jsx":
+/*!**************************************!*\
+  !*** ./client/components/Header.jsx ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Header = function Header() {
+  return _react2.default.createElement(
+    'div',
+    { id: 'main header', className: 'title', style: { textAlign: 'center', margin: ' 5vw 0  5vw 0' } },
+    _react2.default.createElement(
+      'h1',
+      { id: 'header-title', style: { color: 'pink' } },
+      'BOOP THE SHEEP'
+    )
+  );
+};
+
+exports.default = Header;
+
+/***/ }),
+
+/***/ "./client/components/LandingButton.jsx":
+/*!*********************************************!*\
+  !*** ./client/components/LandingButton.jsx ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var LandingButton = function LandingButton() {
+  return _react2.default.createElement(
+    'div',
+    { id: 'landing-btn' },
+    _react2.default.createElement(
+      'a',
+      { href: '/', className: 'button' },
+      'Meep meep'
+    )
+  );
+};
+
+exports.default = LandingButton;
+
+/***/ }),
+
+/***/ "./client/components/LandingSheep.jsx":
+/*!********************************************!*\
+  !*** ./client/components/LandingSheep.jsx ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Game = __webpack_require__(/*! ./Game */ "./client/components/Game.jsx");
+
+var _Game2 = _interopRequireDefault(_Game);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var LandingSheep = function (_React$Component) {
+  _inherits(LandingSheep, _React$Component);
+
+  function LandingSheep(props) {
+    _classCallCheck(this, LandingSheep);
+
+    var _this = _possibleConstructorReturn(this, (LandingSheep.__proto__ || Object.getPrototypeOf(LandingSheep)).call(this, props));
+
+    _this.state = {};
+    _this.handleClick = _this.handleClick.bind(_this);
+    _this.handleHover = _this.handleHover.bind(_this);
+    _this.handleHoverOff = _this.handleHoverOff.bind(_this);
+    return _this;
+  }
+
+  _createClass(LandingSheep, [{
+    key: 'handleClick',
+    value: function handleClick(e) {
+      e.preventDefault();
+      console.log('The link was clicked.');
+      return this.setState({
+        click: true
+      });
+    }
+  }, {
+    key: 'handleHover',
+    value: function handleHover() {
+      return this.setState({
+        hover: true
+      });
+    }
+  }, {
+    key: 'handleHoverOff',
+    value: function handleHoverOff() {
+      return this.setState({
+        hover: false
+      });
+    }
+  }, {
+    key: 'renderSheep',
+    value: function renderSheep() {
+      return _react2.default.createElement(
+        'div',
+        { id: 'sheep' },
+        _react2.default.createElement('img', { src: 'https://ubisafe.org/images/sheep-vector-1.png', style: { display: 'block', margin: 'auto' }, onMouseOver: function onMouseOver() {
+            return console.log('electric sheep yourself !');
+          } })
+      );
+    }
+  }, {
+    key: 'renderElectricSheep',
+    value: function renderElectricSheep() {
+      return _react2.default.createElement(
+        'div',
+        { id: 'electric-sheep' },
+        _react2.default.createElement('img', { src: 'https://vectr.com/tmp/b1eGRGJSwg/aOhKrhb2.svg?width=640&height=640&select=aOhKrhb2page0', style: { display: 'block', margin: 'auto' }, onMouseOver: function onMouseOver() {
+            return console.log('biiiiz');
+          } })
+      );
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { style: { alignItems: 'center' } },
+        _react2.default.createElement(
+          'div',
+          { id: 'landing-sheep', onMouseEnter: this.handleHover, onMouseLeave: this.handleHoverOff, onClick: this.handleClick },
+          this.state.click == true && _react2.default.createElement(_Game2.default, null),
+          ' ',
+          this.state.hover == true ? this.renderElectricSheep() : this.renderSheep()
+        )
+      );
+    }
+  }]);
+
+  return LandingSheep;
+}(_react2.default.Component);
+
+exports.default = LandingSheep;
 
 /***/ }),
 
